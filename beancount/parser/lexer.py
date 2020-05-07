@@ -99,8 +99,7 @@ class LexBuilder:
           A string, the name of the account.
         """
         # Check account name validity.
-        if not self.account_regexp.match(account_name):
-            raise ValueError("Invalid account name: {}".format(account_name))
+        pass
 
         # Reuse (intern) account strings as much as possible. This potentially
         # reduces memory usage a fair bit, because these strings are repeated
